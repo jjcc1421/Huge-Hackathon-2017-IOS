@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HackathonChange" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etG-Nd-GNZ">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                                <color key="backgroundColor" red="0.86660165693083624" green="0.8836996292254613" blue="0.88852743167202575" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <state key="normal" title="Detect a bill"/>
+                                <connections>
+                                    <action selector="feature1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="auj-Uz-IpK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3K-wq-XUm">
+                                <rect key="frame" x="160" y="240" width="160" height="240"/>
+                                <color key="backgroundColor" red="0.86660165693083624" green="0.8836996292254613" blue="0.88852743167202575" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <state key="normal" title="Send email"/>
+                                <connections>
+                                    <action selector="feature4Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0L6-9w-gKj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSO-7h-5tk">
+                                <rect key="frame" x="0.0" y="240" width="160" height="240"/>
+                                <color key="backgroundColor" red="0.23864928157750787" green="0.46925882817394848" blue="0.91168860530546625" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <state key="normal" title="Where i am?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="feature3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HcW-PJ-9SI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQm-XS-4cM">
+                                <rect key="frame" x="160" y="0.0" width="160" height="240"/>
+                                <color key="backgroundColor" red="0.23864928157750787" green="0.46925882817394848" blue="0.91168860530546625" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <state key="normal" title="What time is it?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="feature2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BbP-pT-B4y"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disconnected" translatesAutoresizingMaskIntoConstraints="NO" id="s68-VK-F57">
+                                <rect key="frame" x="143.5" y="223.5" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="pLo-4Z-8iQ"/>
+                                    <constraint firstAttribute="width" constant="33" id="rFw-8H-Vfh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kQm-XS-4cM" firstAttribute="trailing" secondItem="J3K-wq-XUm" secondAttribute="trailing" id="02O-qS-lOR"/>
+                            <constraint firstItem="kQm-XS-4cM" firstAttribute="leading" secondItem="etG-Nd-GNZ" secondAttribute="trailing" id="0mD-xN-kA6"/>
+                            <constraint firstItem="bSO-7h-5tk" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="6af-Yp-u0c"/>
+                            <constraint firstItem="kQm-XS-4cM" firstAttribute="baseline" secondItem="etG-Nd-GNZ" secondAttribute="firstBaseline" id="AIo-jk-VRD"/>
+                            <constraint firstItem="J3K-wq-XUm" firstAttribute="width" secondItem="etG-Nd-GNZ" secondAttribute="width" id="BmK-SF-eUW"/>
+                            <constraint firstItem="etG-Nd-GNZ" firstAttribute="baseline" secondItem="kQm-XS-4cM" secondAttribute="firstBaseline" id="Cha-R3-MH8"/>
+                            <constraint firstItem="J3K-wq-XUm" firstAttribute="baseline" secondItem="bSO-7h-5tk" secondAttribute="firstBaseline" id="Ci9-uz-vIk"/>
+                            <constraint firstItem="bSO-7h-5tk" firstAttribute="top" secondItem="J3K-wq-XUm" secondAttribute="top" id="FLC-iG-SgA"/>
+                            <constraint firstItem="s68-VK-F57" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G4c-pC-25K"/>
+                            <constraint firstItem="kQm-XS-4cM" firstAttribute="width" secondItem="etG-Nd-GNZ" secondAttribute="width" id="GkY-nk-rMf"/>
+                            <constraint firstItem="bSO-7h-5tk" firstAttribute="width" secondItem="etG-Nd-GNZ" secondAttribute="width" id="WBj-f9-wh6"/>
+                            <constraint firstItem="J3K-wq-XUm" firstAttribute="height" secondItem="etG-Nd-GNZ" secondAttribute="height" id="XWz-wh-i6j"/>
+                            <constraint firstItem="kQm-XS-4cM" firstAttribute="height" secondItem="etG-Nd-GNZ" secondAttribute="height" id="YJd-q2-aWO"/>
+                            <constraint firstItem="s68-VK-F57" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZST-0g-rHN"/>
+                            <constraint firstItem="bSO-7h-5tk" firstAttribute="height" secondItem="etG-Nd-GNZ" secondAttribute="height" id="Zym-HH-Ko3"/>
+                            <constraint firstAttribute="trailing" secondItem="kQm-XS-4cM" secondAttribute="trailing" id="dvA-If-ODH"/>
+                            <constraint firstItem="etG-Nd-GNZ" firstAttribute="trailing" secondItem="bSO-7h-5tk" secondAttribute="trailing" id="g3H-Fy-Ub3"/>
+                            <constraint firstItem="etG-Nd-GNZ" firstAttribute="top" secondItem="kQm-XS-4cM" secondAttribute="top" id="hjG-LS-J9l"/>
+                            <constraint firstItem="bSO-7h-5tk" firstAttribute="top" secondItem="etG-Nd-GNZ" secondAttribute="bottom" id="j2W-ms-rKz"/>
+                            <constraint firstItem="kQm-XS-4cM" firstAttribute="leading" secondItem="J3K-wq-XUm" secondAttribute="leading" id="mia-tP-v1K"/>
+                            <constraint firstItem="etG-Nd-GNZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o8X-YG-Fdb"/>
+                            <constraint firstItem="etG-Nd-GNZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ocz-Iz-shL"/>
+                            <constraint firstItem="bSO-7h-5tk" firstAttribute="baseline" secondItem="J3K-wq-XUm" secondAttribute="firstBaseline" id="xFJ-AM-WY6"/>
+                            <constraint firstItem="etG-Nd-GNZ" firstAttribute="leading" secondItem="bSO-7h-5tk" secondAttribute="leading" id="ySd-QF-jJC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bluetoothServiceImageView" destination="s68-VK-F57" id="xlt-Nn-aZh"/>
+                        <outlet property="feature1Button" destination="etG-Nd-GNZ" id="mHq-en-t0z"/>
+                        <outlet property="feature2Button" destination="kQm-XS-4cM" id="Va9-0z-WmT"/>
+                        <outlet property="feature3Button" destination="bSO-7h-5tk" id="9K1-xN-gI3"/>
+                        <outlet property="feature4Button" destination="J3K-wq-XUm" id="9S7-X5-VD2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18231" y="-2494"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="disconnected" width="200" height="200"/>
+    </resources>
+</document>
